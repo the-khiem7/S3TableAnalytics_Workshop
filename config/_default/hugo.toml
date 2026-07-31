@@ -12,7 +12,7 @@ home = ["HTML", "RSS", "JSON"]
 [params]
 themeVariant = "workshop"
 editURL = ""
-description = "Bilingual Hugo documentation template with GitHub Pages deployment and authoring tooling."
+description = "Amazon S3 Tables Hands-on Lab with AWS Analytics Services - Bilingual (EN/VI) workshop documentation."
 author = "thienlh@thienlu.com"
 showVisitedLinks = true
 disableBreadcrumb = false
@@ -20,12 +20,12 @@ disableNextPrev = false
 
 [Languages]
 [Languages.en]
-title = "Hugo Documentation Template"
+title = "Amazon S3 Tables Hands-on Lab"
 weight = 1
 label = "English"
 
 [Languages.vi]
-title = "Mẫu Tài Liệu Hugo"
+title = "Amazon S3 Tables Hands-on Lab"
 weight = 2
 label = "Tiếng Việt"
 
