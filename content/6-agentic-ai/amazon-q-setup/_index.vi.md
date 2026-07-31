@@ -26,11 +26,11 @@ Chọn **Model access** trong menu Configure and learn bên trái.
 
 Nhấp nút **Enable specific models**.
 
-![Kích hoạt truy cập model](/images/workshop/enable-model-access.webp)
+![Kích hoạt truy cập model](/images/workshop/enable-model-access.png)
 
 Chọn **Claude 3.7 Sonnet** và **Claude Sonnet 4**, sau đó nhấp nút **Next**. Nhấp nút **Submit** để hoàn tất.
 
-![Chỉnh sửa truy cập model](/images/workshop/edit-model-access.webp)
+![Chỉnh sửa truy cập model](/images/workshop/edit-model-access.png)
 
 Bạn đã hoàn tất việc thiết lập truy cập đến Foundation Models của Amazon Bedrock.
 
@@ -40,7 +40,7 @@ Truy cập Visual Code Server đã tạo trong môi trường workshop.
 
 Bạn có thể tìm URL như hình bên dưới trên trang đầu tiên của workshop studio.
 
-![URL VS code server](/images/workshop/vs-code-server-url.webp)
+![URL VS code server](/images/workshop/vs-code-server-url.png)
 
 Nhấp vào URL này sẽ cho phép bạn truy cập VS Code Server.
 
@@ -66,7 +66,7 @@ Open this URL: https://view.awsapps.com/start/#/device?user_code=XXXX-YYYY
 
 Hoàn tất đăng nhập trong trình duyệt.
 
-![Xác nhận Amazon Q](/images/workshop/amazon-q-confirm.webp)
+![Xác nhận Amazon Q](/images/workshop/amazon-q-confirm.png)
 
 ![Cho phép truy cập Amazon Q](/images/workshop/amazon-q-allow-access.webp)
 

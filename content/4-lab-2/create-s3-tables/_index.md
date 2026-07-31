@@ -42,22 +42,12 @@ This is the part about setting up Spark configuration to use Amazon S3 Tables, A
 
 3. Copy the ARN (Amazon Resource Name) value of the created Table bucket.
 
-![Table bucket ARN](/images/workshop/table_bucket_arn.webp)
+![Table bucket ARN](/images/workshop/table_bucket_arn.png)
 
 {{% notice info %}}
-There are two ways to configure the catalog in the Configuration code.
+There are two ways to configure the catalog in the Configuration code. (Option-1) is the method of setting up S3TablesCatalog, and (Option-2) sets up a REST-based catalog. Both methods work, but for convenience in this lab, we will proceed with the (Option-1) method.
 
-(Option-1) is the method of setting up S3TablesCatalog,
-
-(Option-2) sets up a REST-based catalog.
-
-(Note) Option-2 method does not yet support creating tables from Dataframes.
-
-Using df.write.saveAsTable(...) will result in a `Stage-create is currently not supported.` error.
-
-In this method, you need to create a table with spark.sql("CREATE TABLE ...") and then insert data with df.write.InsertInto(...).
-
-Both methods work, but for convenience in this lab, we will proceed with the (Option-1) method.
+(Note) Option-2 method does not yet support creating tables from Dataframes. Using df.write.saveAsTable(...) will result in a `Stage-create is currently not supported.` error. In this method, you need to create a table with spark.sql("CREATE TABLE ...") and then insert data with df.write.InsertInto(...).
 {{% /notice %}}
 
 4. Click the '+' button to create a new Cell and add the following Configuration code.
@@ -184,13 +174,7 @@ for dataset in datasets:
 - It loops through the 15 datasets and sequentially creates tables.
 
 {{% notice info %}}
-When creating tables for actual production use, it's recommended to specify partition columns as shown below.
-
-Data is stored in a hierarchy based on the partition columns.
-
-This structure allows data pruning based on partition columns during queries, which significantly impacts query performance in the future.
-
-For now, we won't specify partitions to facilitate a smooth hands-on experience. (This is just for your reference)
+When creating tables for actual production use, it's recommended to specify partition columns as shown below. Data is stored in a hierarchy based on the partition columns. This structure allows data pruning based on partition columns during queries, which significantly impacts query performance in the future. For now, we won't specify partitions to facilitate a smooth hands-on experience. (This is just for your reference)
 {{% /notice %}}
 
 ```python
@@ -227,7 +211,7 @@ SHOW TABLES FROM s3table.workshop_namespace
 
 4. If the tables are displayed as shown below, the process was completed successfully.
 
-![Table check](/images/workshop/table-check.webp)
+![Table check](/images/workshop/table-check.png)
 
 5. Run the queries below to check the data within the tables.
 

@@ -34,13 +34,11 @@ Click 'Create folder' again and create a folder named 'data'.
 Click 'Upload', then use the 'Add files' button to upload the downloaded files to their respective paths.
 
 {{% notice info %}}
-Upload a Jar file (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar) to the 's3://${bucket}/lib/' path.
-
-Upload two CSV files (AL_D151_11_20240125_UTF8.csv and AL_D151_41_20250120_200000_UTF8.csv) to the 's3://${bucket}/data/' path.
+Upload a Jar file (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar) to the 's3://${bucket}/lib/' path. Upload two CSV files (AL_D151_11_20240125_UTF8.csv and AL_D151_41_20250120_200000_UTF8.csv) to the 's3://${bucket}/data/' path.
 {{% /notice %}}
 
-![Upload data file](/images/workshop/upload-data.webp)
+![Upload data file](/images/workshop/upload-data.png)
 
-![Upload jar file](/images/workshop/upload-jar.webp)
+![Upload jar file](/images/workshop/upload-jar.png)
 
 You have completed uploading the files necessary for the workshop to S3.

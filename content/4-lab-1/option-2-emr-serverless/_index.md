@@ -30,7 +30,7 @@ In the left menu of JupyterLab, click to open the 'workshop-workspace.ipynb' not
 
 Select 'Pyspark' in the 'Select Kernel' option.
 
-![Open notebook](/images/workshop/emr-open-notebook.webp)
+![Open notebook](/images/workshop/emr-open-notebook.png)
 
 You are now ready to create Namespace and Table in S3 Tables based on EMR Serverless.
 
@@ -46,7 +46,7 @@ Select Table buckets from the left menu.
 
 Copy the ARN (Amazon Resource Name) value of the created Table bucket.
 
-![Table bucket ARN](/images/workshop/table-bucket-arn.webp)
+![Table bucket ARN](/images/workshop/table-bucket-arn.png)
 
 Click the '+' button to create a new Cell and add the following Configuration code:
 
@@ -101,19 +101,9 @@ This code configures Spark to use the following:
 - Enter 'ap-northeast-2' or 'us-east-1' for the region value.
 
 {{% notice info %}}
-There are two ways to set up the catalog in the Configuration code.
+There are two ways to set up the catalog in the Configuration code. (Option-1) is the method to set up S3TablesCatalog, and (Option-2) sets up a REST-style catalog. Both methods work, but for convenience, we will proceed with (Option-1) in this lab.
 
-(Option-1) is the method to set up S3TablesCatalog,
-
-(Option-2) sets up a REST-style catalog.
-
-Both methods work, but for convenience, we will proceed with (Option-1) in this lab.
-
-(Note) Option-2 method does not yet support creating tables from Dataframes.
-
-Using `df.write.saveAsTable(...)` will result in a `Stage-create is currently not supported.` error.
-
-In this method, you need to create the table using `spark.sql("CREATE TABLE ...")` and then insert data using `df.write.InsertInto(...)`.
+(Note) Option-2 method does not yet support creating tables from Dataframes. Using `df.write.saveAsTable(...)` will result in a `Stage-create is currently not supported.` error. In this method, you need to create the table using `spark.sql("CREATE TABLE ...")` and then insert data using `df.write.InsertInto(...)`.
 {{% /notice %}}
 
 Click the Run button to execute the notebook Cell.
@@ -123,17 +113,7 @@ You are now ready to use Pyspark code referencing Amazon S3 Tables, Glue, and Ap
 ## Read CSV Data from S3
 
 {{% notice info %}}
-This section covers reading CSV data from S3 using Spark.
-
-If you encounter memory-related errors or are prompted to restart the kernel after executing the configuration code and then running Spark code, it's recommended to restart the EMR Serverless Application as follows:
-
-Select 'Serverless' > 'Applications' from the left menu on the EMR Studio screen.
-
-Select 'workshop_emr_application' and click the 'Stop application' button to stop it.
-
-Then click the 'Start application' button to start the EMR Serverless Application.
-
-Verify that the cluster is properly attached in the JupyterLab notebook before continuing your work.
+This section covers reading CSV data from S3 using Spark. If you encounter memory-related errors or are prompted to restart the kernel after executing the configuration code and then running Spark code, it's recommended to restart the EMR Serverless Application as follows: Select 'Serverless' > 'Applications' from the left menu on the EMR Studio screen. Select 'workshop_emr_application' and click the 'Stop application' button to stop it. Then click the 'Start application' button to start the EMR Serverless Application. Verify that the cluster is properly attached in the JupyterLab notebook before continuing your work.
 {{% /notice %}}
 
 Access the previously created EMR Workspace (JupyterLab).
@@ -173,7 +153,7 @@ df = spark.read \
 - Replace `<bucket>` with the appropriate S3 bucket name for your environment.
 - Define the schema and then read the CSV data from S3.
 
-![Read CSV file](/images/workshop/emr-read-csv-data.webp)
+![Read CSV file](/images/workshop/emr-read-csv-data.png)
 
 Click the '+' button to add a Cell.
 
@@ -360,7 +340,7 @@ WHERE legal_dong_code = '1111010100'
 
 This updates the `legal_dong_name` to 'Seoul Jongno-gu Cheongunbong-dong' for rows where `legal_dong_code` is '1111010100'.
 
-![Update table](/images/workshop/emr-update-table.webp)
+![Update table](/images/workshop/emr-update-table.png)
 
 Click the '+' button to add a Cell.
 

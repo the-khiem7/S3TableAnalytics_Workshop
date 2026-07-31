@@ -9,9 +9,7 @@ pre: " <b>4.6. </b>"
 ## Truy vấn chuyển đổi dữ liệu
 
 {{% notice info %}}
-Chúng ta sẽ chạy các truy vấn chuyển đổi dữ liệu gốc.
-
-Chuyển đổi thường được xử lý cho các mục đích sau:
+Chúng ta sẽ chạy các truy vấn chuyển đổi dữ liệu gốc. Chuyển đổi thường được xử lý cho các mục đích sau:
 
 - **Cải thiện chất lượng dữ liệu:** Để làm sạch dữ liệu không đầy đủ hoặc không chính xác, loại bỏ trùng lặp và xử lý giá trị thiếu.
 - **Cấu trúc hóa dữ liệu:** Để cấu trúc dữ liệu phi cấu trúc hoặc tái cấu trúc các cấu trúc hiện có cho phù hợp với hệ thống đích.
@@ -54,9 +52,7 @@ spark.sql(f"""
 ## Truy vấn khám phá dữ liệu
 
 {{% notice info %}}
-Chúng tôi đã chuẩn bị một số truy vấn mẫu để khám phá và phân tích dữ liệu.
-
-Chạy các truy vấn và xem cách khám phá và phân tích dữ liệu được thực hiện bằng bảng Iceberg.
+Chúng tôi đã chuẩn bị một số truy vấn mẫu để khám phá và phân tích dữ liệu. Chạy các truy vấn và xem cách khám phá và phân tích dữ liệu được thực hiện bằng bảng Iceberg.
 {{% /notice %}}
 
 ### Đếm số lượng bệnh nhân

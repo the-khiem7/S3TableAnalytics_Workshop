@@ -64,7 +64,7 @@ aws quicksight list-users --aws-account-id <account_id> --namespace default --re
 
 Copy the value corresponding to "Arn" in the response JSON. This value is the ARN of the account to grant access in Lake Formation.
 
-![Get User ARN](/images/workshop/cloudshell.webp)
+![Get User ARN](/images/workshop/cloudshell.png)
 
 You have obtained the Quicksight user ARN.
 
@@ -132,7 +132,7 @@ After viewing the data, click the 'Close' button.
 
 Click the 'Add data' button at the top right.
 
-![Add dataset](/images/workshop/add-dataset.webp)
+![Add dataset](/images/workshop/add-dataset.png)
 
 Select 'Data source' in the Select menu, choose the data source you created, and click the 'Select' button.
 
@@ -202,7 +202,7 @@ Drag the 'conditions' data to join with 'encounters'. Set up the join and click 
 - conditions Join Column = encounter
 - Join type = Left
 
-![Join Configuration](/images/workshop/join-config-2.webp)
+![Join Configuration](/images/workshop/join-config-2.png)
 
 Drag the 'observations' data to join with 'encounters'. Set up the join and click 'Apply' to apply the changes.
 
@@ -210,7 +210,7 @@ Drag the 'observations' data to join with 'encounters'. Set up the join and clic
 - observations Join Column = encounter
 - Join type = Left
 
-![Join Configuration](/images/workshop/join-config-3.webp)
+![Join Configuration](/images/workshop/join-config-3.png)
 
 Drag the 'procedures' data to join with 'encounters'. Set up the join and click 'Apply' to apply the changes.
 
@@ -218,7 +218,7 @@ Drag the 'procedures' data to join with 'encounters'. Set up the join and click 
 - procedures Join Column = encounter
 - Join type = Left
 
-![Join Configuration](/images/workshop/join-config-4.webp)
+![Join Configuration](/images/workshop/join-config-4.png)
 
 Drag the 'medications' data to join with 'encounters'. Set up the join and click 'Apply' to apply the changes.
 
@@ -226,7 +226,7 @@ Drag the 'medications' data to join with 'encounters'. Set up the join and click
 - medications Join Column = encounter
 - Join type = Left
 
-![Join Configuration](/images/workshop/join-config-5.webp)
+![Join Configuration](/images/workshop/join-config-5.png)
 
 After completing the above steps, wait for the full column list and data preview to appear on the left.
 
@@ -240,15 +240,7 @@ Once the 'Query mode' at the bottom left and the 'SAVE & PUBLISH' button at the 
 {{% notice info %}}
 **What is SPICE query mode?**
 
-SPICE is Amazon QuickSight's in-memory engine designed for fast data processing and visualization.
-
-This engine loads data into QuickSight's in-memory storage, greatly improving query performance.
-
-Each user is provided with 10GB of SPICE capacity by default.
-
-Additional capacity can be purchased if more than the default allocation is needed. It is billed on a monthly basis per GB.
-
-In this workshop, we use SPICE mode for faster visualization.
+SPICE is Amazon QuickSight's in-memory engine designed for fast data processing and visualization. This engine loads data into QuickSight's in-memory storage, greatly improving query performance. Each user is provided with 10GB of SPICE capacity by default. Additional capacity can be purchased if more than the default allocation is needed. It is billed on a monthly basis per GB. In this workshop, we use SPICE mode for faster visualization.
 {{% /notice %}}
 
 After the Publish complete message, click the 'CLOSE' button.
@@ -261,7 +253,7 @@ The REFRESH typically takes 5-10 minutes to complete.
 
 Wait for the REFRESH to complete. After completion, you should see the dataset details as shown below.
 
-![Dataset Details](/images/workshop/dataset-details-2.webp)
+![Dataset Details](/images/workshop/dataset-details-2.png)
 
 The join configuration between datasets and SPICE setup are complete.
 

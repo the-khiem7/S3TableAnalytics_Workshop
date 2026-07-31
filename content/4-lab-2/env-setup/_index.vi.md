@@ -83,7 +83,6 @@ aws s3 cp s3-tables-catalog-for-iceberg-runtime-0.1.5.jar s3://${BUCKET}/lib/
 
 {{% notice info "Thông tin" %}}
 - Tải các tệp CSV lên đường dẫn 's3://${bucket}/data/coherent/'.
-
 - Tải tệp Jar (`s3-tables-catalog-for-iceberg-runtime-0.1.5.jar`) lên đường dẫn 's3://${bucket}/lib/'.
 {{% /notice %}}
 

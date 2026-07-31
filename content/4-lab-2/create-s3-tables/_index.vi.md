@@ -42,22 +42,12 @@ pre: " <b>4.3. </b>"
 
 3. Sao chép giá trị ARN (Amazon Resource Name) của Table bucket đã tạo.
 
-![Table bucket ARN](/images/workshop/table_bucket_arn.webp)
+![Table bucket ARN](/images/workshop/table_bucket_arn.png)
 
 {{% notice info %}}
-Có hai cách để cấu hình catalog trong mã Configuration.
+Có hai cách để cấu hình catalog trong mã Configuration. (Option-1) là phương pháp thiết lập S3TablesCatalog, và (Option-2) thiết lập catalog dựa trên REST. Cả hai phương pháp đều hoạt động, nhưng để thuận tiện trong lab này, chúng ta sẽ tiến hành với phương pháp (Option-1).
 
-(Option-1) là phương pháp thiết lập S3TablesCatalog,
-
-(Option-2) thiết lập catalog dựa trên REST.
-
-(Lưu ý) Phương pháp Option-2 hiện chưa hỗ trợ tạo bảng từ Dataframes.
-
-Sử dụng df.write.saveAsTable(...) sẽ dẫn đến lỗi `Stage-create is currently not supported.`.
-
-Với phương pháp này, bạn cần tạo bảng bằng spark.sql("CREATE TABLE ...") rồi chèn dữ liệu bằng df.write.InsertInto(...).
-
-Cả hai phương pháp đều hoạt động, nhưng để thuận tiện trong lab này, chúng ta sẽ tiến hành với phương pháp (Option-1).
+(Lưu ý) Phương pháp Option-2 hiện chưa hỗ trợ tạo bảng từ Dataframes. Sử dụng df.write.saveAsTable(...) sẽ dẫn đến lỗi `Stage-create is currently not supported.`. Với phương pháp này, bạn cần tạo bảng bằng spark.sql("CREATE TABLE ...") rồi chèn dữ liệu bằng df.write.InsertInto(...).
 {{% /notice %}}
 
 4. Nhấp nút '+' để tạo Cell mới và thêm mã Configuration sau.
@@ -184,13 +174,7 @@ for dataset in datasets:
 - Nó lặp qua 15 bộ dữ liệu và tuần tự tạo các bảng.
 
 {{% notice info %}}
-Khi tạo bảng cho mục đích sản xuất thực tế, khuyến nghị chỉ định các cột phân vùng như bên dưới.
-
-Dữ liệu được lưu trữ theo phân cấp dựa trên các cột phân vùng.
-
-Cấu trúc này cho phép cắt tỉa dữ liệu dựa trên các cột phân vùng trong quá trình truy vấn, ảnh hưởng đáng kể đến hiệu suất truy vấn trong tương lai.
-
-Hiện tại, chúng ta sẽ không chỉ định phân vùng để đảm bảo trải nghiệm thực hành suôn sẻ. (Đây chỉ là thông tin tham khảo)
+Khi tạo bảng cho mục đích sản xuất thực tế, khuyến nghị chỉ định các cột phân vùng như bên dưới. Dữ liệu được lưu trữ theo phân cấp dựa trên các cột phân vùng. Cấu trúc này cho phép cắt tỉa dữ liệu dựa trên các cột phân vùng trong quá trình truy vấn, ảnh hưởng đáng kể đến hiệu suất truy vấn trong tương lai. Hiện tại, chúng ta sẽ không chỉ định phân vùng để đảm bảo trải nghiệm thực hành suôn sẻ. (Đây chỉ là thông tin tham khảo)
 {{% /notice %}}
 
 ```python
@@ -227,7 +211,7 @@ SHOW TABLES FROM s3table.workshop_namespace
 
 4. Nếu các bảng được hiển thị như bên dưới, quy trình đã hoàn tất thành công.
 
-![Kiểm tra bảng](/images/workshop/table-check.webp)
+![Kiểm tra bảng](/images/workshop/table-check.png)
 
 5. Chạy các truy vấn bên dưới để kiểm tra dữ liệu trong các bảng.
 

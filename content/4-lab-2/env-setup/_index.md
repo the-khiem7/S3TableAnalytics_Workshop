@@ -83,7 +83,6 @@ aws s3 cp s3-tables-catalog-for-iceberg-runtime-0.1.5.jar s3://${BUCKET}/lib/
 
 {{% notice info "Information" %}}
 - Upload CSV files to the 's3://${bucket}/data/coherent/' path.
-
 - Upload the Jar file (`s3-tables-catalog-for-iceberg-runtime-0.1.5.jar`) to the 's3://${bucket}/lib/' path.
 {{% /notice %}}
 

@@ -28,7 +28,7 @@ Chúng ta sẽ tải lên file Apache Iceberg Runtime Jar và file Glow Jar cầ
 Tải lên hai file Jar (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar & glow-spark3-assembly-2.0.0.jar) vào đường dẫn 's3://${bucket}/lib/'.
 {{% /notice %}}
 
-![Tải lên file jar](/images/workshop/upload-jar.webp)
+![Tải lên file jar](/images/workshop/upload-jar.png)
 
 Bạn đã hoàn thành việc tải lên các file cần thiết cho workshop lên S3.
 

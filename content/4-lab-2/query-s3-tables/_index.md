@@ -9,9 +9,7 @@ pre: " <b>4.6. </b>"
 ## Data Transformation Query
 
 {{% notice info %}}
-We will run queries that transform the original data.
-
-Transformation is typically processed for the following purposes:
+We will run queries that transform the original data. Transformation is typically processed for the following purposes:
 
 - **Data Quality Improvement:** To cleanse incomplete or inaccurate data, remove duplicates, and handle missing values.
 - **Data Structuring:** To structure unstructured data or restructure existing structures to fit the target system.
@@ -54,9 +52,7 @@ spark.sql(f"""
 ## Data Discovery Queries
 
 {{% notice info %}}
-We have prepared several sample queries for data exploration and analysis.
-
-Run the queries and see how data exploration and analysis are performed using Iceberg tables.
+We have prepared several sample queries for data exploration and analysis. Run the queries and see how data exploration and analysis are performed using Iceberg tables.
 {{% /notice %}}
 
 ### Count the number of patients

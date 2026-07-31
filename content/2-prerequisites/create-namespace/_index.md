@@ -17,7 +17,7 @@ Specify the S3 location to store Athena query results. If not specified, queries
 2. Click the 'Explore the query editor' button on the right.
 
 3. Click the 'Edit settings' button to specify the S3 location for storing Athena query results. (If not specified, Athena queries cannot be executed.)
-   - ![Query result S3 setting](/images/workshop/athena_query_result_s3_setting.webp)
+   - ![Query result S3 setting](/images/workshop/athena_query_result_s3_setting.png)
 
    1. Click the 'Browse S3' button.
    2. Select an existing S3 bucket and click the 'Choose' button.
@@ -40,7 +40,7 @@ Create a Namespace to be used in S3 Tables.
 {{% /notice %}}
 
 1. Set the left settings on the Editor page as follows:
-   - ![Create namespace](/images/workshop/athena_create_namespace.webp)
+   - ![Create namespace](/images/workshop/athena_create_namespace.png)
    - Data source: `AwsDataCatalog`
    - Catalog: `s3tablescatalog/workshop-table-bucket`
 

@@ -7,9 +7,7 @@ pre: " <b>1.1. </b>"
 ---
 
 {{% notice info %}}
-Amazon S3 Tables là một dịch vụ mới được AWS chính thức ra mắt vào cuối năm 2023. Đây là dịch vụ dữ liệu dạng bảng dựa trên lưu trữ đối tượng Amazon S3.
-
-Nó đơn giản hóa việc xây dựng và quản lý data lake. Được xây dựng trên định dạng bảng mã nguồn mở Apache Iceberg, cho phép các nhà phân tích dữ liệu và kỹ sư dễ dàng quản lý dữ liệu được lưu trữ trong S3.
+Amazon S3 Tables là một dịch vụ mới được AWS chính thức ra mắt vào cuối năm 2023. Đây là dịch vụ dữ liệu dạng bảng dựa trên lưu trữ đối tượng Amazon S3. Nó đơn giản hóa việc xây dựng và quản lý data lake. Được xây dựng trên định dạng bảng mã nguồn mở Apache Iceberg, cho phép các nhà phân tích dữ liệu và kỹ sư dễ dàng quản lý dữ liệu được lưu trữ trong S3.
 {{% /notice %}}
 
 Trước khi đi sâu vào Amazon S3 Tables, hãy cùng tìm hiểu về Apache Iceberg trước.

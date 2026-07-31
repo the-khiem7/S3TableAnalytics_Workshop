@@ -28,7 +28,7 @@ We will upload Apache Iceberg Runtime Jar file, and Glow Jar file required for t
 Upload two Jar files (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar & glow-spark3-assembly-2.0.0.jar) to the 's3://${bucket}/lib/' path.
 {{% /notice %}}
 
-![Upload jar file](/images/workshop/upload-jar.webp)
+![Upload jar file](/images/workshop/upload-jar.png)
 
 You have completed uploading the files necessary for the workshop to S3.
 

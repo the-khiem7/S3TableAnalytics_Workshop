@@ -7,9 +7,7 @@ pre: " <b>1.2. </b>"
 ---
 
 {{% notice info %}}
-Apache Spark là một framework xử lý phân tán mã nguồn mở cho xử lý dữ liệu quy mô lớn, cho phép xử lý dữ liệu nhanh chóng và linh hoạt.
-
-Tôi sẽ mô tả các khái niệm cốt lõi của Spark dưới dạng danh sách.
+Apache Spark là một framework xử lý phân tán mã nguồn mở cho xử lý dữ liệu quy mô lớn, cho phép xử lý dữ liệu nhanh chóng và linh hoạt. Tôi sẽ mô tả các khái niệm cốt lõi của Spark dưới dạng danh sách.
 {{% /notice %}}
 
 ## 1. Tổng quan Apache Spark

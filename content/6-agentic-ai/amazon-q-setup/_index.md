@@ -26,11 +26,11 @@ Select **Model access** under the Configure and learn menu on the left.
 
 Click the **Enable specific models** button.
 
-![Enable model access](/images/workshop/enable-model-access.webp)
+![Enable model access](/images/workshop/enable-model-access.png)
 
 Select **Claude 3.7 Sonnet** and **Claude Sonnet 4**, then click the **Next** button. Click the **Submit** button to complete.
 
-![Edit model access](/images/workshop/edit-model-access.webp)
+![Edit model access](/images/workshop/edit-model-access.png)
 
 You have completed setting up access to Amazon Bedrock's Foundation Models.
 
@@ -40,7 +40,7 @@ Access the Visual Code Server created in the workshop environment.
 
 You can find the URL as shown below on the first page of the workshop studio.
 
-![VS code server URL](/images/workshop/vs-code-server-url.webp)
+![VS code server URL](/images/workshop/vs-code-server-url.png)
 
 Clicking on this URL will allow you to access the VS Code Server.
 
@@ -66,7 +66,7 @@ Open this URL: https://view.awsapps.com/start/#/device?user_code=XXXX-YYYY
 
 Complete the login in your browser.
 
-![Amazon Q confirm](/images/workshop/amazon-q-confirm.webp)
+![Amazon Q confirm](/images/workshop/amazon-q-confirm.png)
 
 ![Amazon Q allow access](/images/workshop/amazon-q-allow-access.webp)
 

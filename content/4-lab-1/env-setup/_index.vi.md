@@ -34,13 +34,11 @@ Nhấp 'Create folder' lần nữa và tạo thư mục có tên 'data'.
 Nhấp 'Upload', sau đó sử dụng nút 'Add files' để tải lên các file đã tải xuống vào các đường dẫn tương ứng.
 
 {{% notice info %}}
-Tải lên file Jar (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar) vào đường dẫn 's3://${bucket}/lib/'.
-
-Tải lên hai file CSV (AL_D151_11_20240125_UTF8.csv và AL_D151_41_20250120_200000_UTF8.csv) vào đường dẫn 's3://${bucket}/data/'.
+Tải lên file Jar (s3-tables-catalog-for-iceberg-runtime-0.1.5.jar) vào đường dẫn 's3://${bucket}/lib/'. Tải lên hai file CSV (AL_D151_11_20240125_UTF8.csv và AL_D151_41_20250120_200000_UTF8.csv) vào đường dẫn 's3://${bucket}/data/'.
 {{% /notice %}}
 
-![Tải lên file dữ liệu](/images/workshop/upload-data.webp)
+![Tải lên file dữ liệu](/images/workshop/upload-data.png)
 
-![Tải lên file jar](/images/workshop/upload-jar.webp)
+![Tải lên file jar](/images/workshop/upload-jar.png)
 
 Bạn đã hoàn thành việc tải lên các file cần thiết cho workshop lên S3.

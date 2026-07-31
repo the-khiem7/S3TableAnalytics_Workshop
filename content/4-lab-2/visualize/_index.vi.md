@@ -64,7 +64,7 @@ aws quicksight list-users --aws-account-id <account_id> --namespace default --re
 
 Sao chép giá trị tương ứng với "Arn" trong JSON phản hồi. Giá trị này là ARN của tài khoản để cấp quyền truy cập trong Lake Formation.
 
-![Lấy User ARN](/images/workshop/cloudshell.webp)
+![Lấy User ARN](/images/workshop/cloudshell.png)
 
 Bạn đã lấy được Quicksight user ARN.
 
@@ -132,7 +132,7 @@ Sau khi xem dữ liệu, nhấp nút 'Close'.
 
 Nhấp nút 'Add data' ở góc trên bên phải.
 
-![Thêm dataset](/images/workshop/add-dataset.webp)
+![Thêm dataset](/images/workshop/add-dataset.png)
 
 Chọn 'Data source' trong menu Select, chọn data source bạn đã tạo và nhấp nút 'Select'.
 
@@ -202,7 +202,7 @@ Kéo dữ liệu 'conditions' để join với 'encounters'. Thiết lập join 
 - conditions Join Column = encounter
 - Join type = Left
 
-![Cấu hình Join](/images/workshop/join-config-2.webp)
+![Cấu hình Join](/images/workshop/join-config-2.png)
 
 Kéo dữ liệu 'observations' để join với 'encounters'. Thiết lập join và nhấp 'Apply' để áp dụng thay đổi.
 
@@ -210,7 +210,7 @@ Kéo dữ liệu 'observations' để join với 'encounters'. Thiết lập joi
 - observations Join Column = encounter
 - Join type = Left
 
-![Cấu hình Join](/images/workshop/join-config-3.webp)
+![Cấu hình Join](/images/workshop/join-config-3.png)
 
 Kéo dữ liệu 'procedures' để join với 'encounters'. Thiết lập join và nhấp 'Apply' để áp dụng thay đổi.
 
@@ -218,7 +218,7 @@ Kéo dữ liệu 'procedures' để join với 'encounters'. Thiết lập join 
 - procedures Join Column = encounter
 - Join type = Left
 
-![Cấu hình Join](/images/workshop/join-config-4.webp)
+![Cấu hình Join](/images/workshop/join-config-4.png)
 
 Kéo dữ liệu 'medications' để join với 'encounters'. Thiết lập join và nhấp 'Apply' để áp dụng thay đổi.
 
@@ -226,7 +226,7 @@ Kéo dữ liệu 'medications' để join với 'encounters'. Thiết lập join
 - medications Join Column = encounter
 - Join type = Left
 
-![Cấu hình Join](/images/workshop/join-config-5.webp)
+![Cấu hình Join](/images/workshop/join-config-5.png)
 
 Sau khi hoàn tất các bước trên, đợi danh sách cột đầy đủ và xem trước dữ liệu xuất hiện ở bên trái.
 
@@ -240,15 +240,7 @@ Khi 'Query mode' ở góc dưới bên trái và nút 'SAVE & PUBLISH' ở góc 
 {{% notice info %}}
 **SPICE query mode là gì?**
 
-SPICE là công cụ in-memory của Amazon QuickSight được thiết kế để xử lý và trực quan hóa dữ liệu nhanh chóng.
-
-Công cụ này tải dữ liệu vào bộ nhớ in-memory của QuickSight, cải thiện đáng kể hiệu suất truy vấn.
-
-Mỗi người dùng được cung cấp 10GB dung lượng SPICE mặc định.
-
-Có thể mua thêm dung lượng nếu cần nhiều hơn mức phân bổ mặc định. Phí được tính hàng tháng theo GB.
-
-Trong workshop này, chúng ta sử dụng chế độ SPICE để trực quan hóa nhanh hơn.
+SPICE là công cụ in-memory của Amazon QuickSight được thiết kế để xử lý và trực quan hóa dữ liệu nhanh chóng. Công cụ này tải dữ liệu vào bộ nhớ in-memory của QuickSight, cải thiện đáng kể hiệu suất truy vấn. Mỗi người dùng được cung cấp 10GB dung lượng SPICE mặc định. Có thể mua thêm dung lượng nếu cần nhiều hơn mức phân bổ mặc định. Phí được tính hàng tháng theo GB. Trong workshop này, chúng ta sử dụng chế độ SPICE để trực quan hóa nhanh hơn.
 {{% /notice %}}
 
 Sau thông báo Publish complete, nhấp nút 'CLOSE'.
@@ -261,7 +253,7 @@ REFRESH thường mất 5-10 phút để hoàn tất.
 
 Đợi REFRESH hoàn tất. Sau khi hoàn tất, bạn sẽ thấy chi tiết dataset như bên dưới.
 
-![Chi tiết Dataset](/images/workshop/dataset-details-2.webp)
+![Chi tiết Dataset](/images/workshop/dataset-details-2.png)
 
 Cấu hình join giữa các dataset và thiết lập SPICE đã hoàn tất.
 

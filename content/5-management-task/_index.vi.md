@@ -53,7 +53,7 @@ aws s3tables get-table-maintenance-job-status \
     --name $table
 ```
 
-![Trạng thái job](/images/workshop/get-job-status.webp)
+![Trạng thái job](/images/workshop/get-job-status.png)
 
 | Job | Mô tả |
 |-----|-------|
@@ -72,7 +72,7 @@ aws s3tables get-table-maintenance-configuration \
     --name $table
 ```
 
-![Cấu hình job](/images/workshop/get-job-configuration.webp)
+![Cấu hình job](/images/workshop/get-job-configuration.png)
 
 | Cấu hình | Mô tả |
 |-----------|-------|
@@ -147,6 +147,6 @@ aws s3tables get-table-maintenance-configuration \
     --name $table
 ```
 
-![Cấu hình job đã cập nhật](/images/workshop/get-updated-job-configuration.webp)
+![Cấu hình job đã cập nhật](/images/workshop/get-updated-job-configuration.png)
 
 Bạn có thể xác nhận các giá trị cấu hình đã được cập nhật.

@@ -64,7 +64,7 @@ aws quicksight list-users --aws-account-id <account_id> --namespace default --re
 - Copy the value corresponding to the "Arn" field from the response JSON.
 - This value is the ARN of the Account that will be given access permissions in Lake Formation.
 
-![Get User ARN](/images/workshop/quicksight-cloudshell.webp)
+![Get User ARN](/images/workshop/quicksight-cloudshell.png)
 
 You have obtained the Quicksight user ARN value.
 
@@ -123,13 +123,13 @@ SELECT *
 FROM "s3tablescatalog"."workshop_namespace"."individually_disclosed_building_price"
 ```
 
-![Add datasource](/images/workshop/quicksight-add-datasource.webp)
+![Add datasource](/images/workshop/quicksight-add-datasource.png)
 
 You will be directed to a screen like the one below. Click the 'Apply' button to view the data.
 
 [Note] 'SPICE' is a feature related to data caching that improves query speed.
 
-![Add datasource](/images/workshop/quicksight-add-datasource-2.webp)
+![Add datasource](/images/workshop/quicksight-add-datasource-2.png)
 
 Once the data is displayed correctly, click the 'Close' button.
 

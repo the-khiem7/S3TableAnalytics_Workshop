@@ -17,7 +17,7 @@ Chỉ định vị trí S3 để lưu trữ kết quả truy vấn Athena. Nếu
 2. Nhấp nút 'Explore the query editor' ở bên phải.
 
 3. Nhấp nút 'Edit settings' để chỉ định vị trí S3 cho việc lưu trữ kết quả truy vấn Athena. (Nếu không được chỉ định, các truy vấn Athena không thể được thực thi.)
-   - ![Cài đặt S3 cho kết quả truy vấn](/images/workshop/athena_query_result_s3_setting.webp)
+   - ![Cài đặt S3 cho kết quả truy vấn](/images/workshop/athena_query_result_s3_setting.png)
 
    1. Nhấp nút 'Browse S3'.
    2. Chọn một S3 bucket hiện có và nhấp nút 'Choose'.
@@ -40,7 +40,7 @@ Tạo Namespace sẽ được sử dụng trong S3 Tables.
 {{% /notice %}}
 
 1. Thiết lập cài đặt bên trái trên trang Editor như sau:
-   - ![Tạo namespace](/images/workshop/athena_create_namespace.webp)
+   - ![Tạo namespace](/images/workshop/athena_create_namespace.png)
    - Data source: `AwsDataCatalog`
    - Catalog: `s3tablescatalog/workshop-table-bucket`
 

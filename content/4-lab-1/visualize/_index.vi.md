@@ -64,7 +64,7 @@ aws quicksight list-users --aws-account-id <account_id> --namespace default --re
 - Sao chép giá trị tương ứng với trường "Arn" từ JSON phản hồi.
 - Giá trị này là ARN của Tài khoản sẽ được cấp quyền truy cập trong Lake Formation.
 
-![Lấy ARN Người dùng](/images/workshop/quicksight-cloudshell.webp)
+![Lấy ARN Người dùng](/images/workshop/quicksight-cloudshell.png)
 
 Bạn đã lấy được giá trị ARN người dùng Quicksight.
 
@@ -123,13 +123,13 @@ SELECT *
 FROM "s3tablescatalog"."workshop_namespace"."individually_disclosed_building_price"
 ```
 
-![Thêm datasource](/images/workshop/quicksight-add-datasource.webp)
+![Thêm datasource](/images/workshop/quicksight-add-datasource.png)
 
 Bạn sẽ được chuyển đến màn hình như bên dưới. Nhấp nút 'Apply' để xem dữ liệu.
 
 [Lưu ý] 'SPICE' là tính năng liên quan đến bộ nhớ đệm dữ liệu giúp cải thiện tốc độ truy vấn.
 
-![Thêm datasource](/images/workshop/quicksight-add-datasource-2.webp)
+![Thêm datasource](/images/workshop/quicksight-add-datasource-2.png)
 
 Khi dữ liệu hiển thị chính xác, nhấp nút 'Close'.
 

@@ -7,9 +7,7 @@ pre: " <b>1.2. </b>"
 ---
 
 {{% notice info %}}
-Apache Spark is an open-source distributed processing framework for large-scale data processing, enabling fast and flexible data processing.
-
-I will describe the core concepts of Spark in a list format.
+Apache Spark is an open-source distributed processing framework for large-scale data processing, enabling fast and flexible data processing. I will describe the core concepts of Spark in a list format.
 {{% /notice %}}
 
 ## 1. Apache Spark Overview

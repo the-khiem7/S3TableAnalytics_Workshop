@@ -30,7 +30,7 @@ Phần này hướng dẫn truy cập EMR Workspace đã thiết lập trong Đi
 
 9. Chọn 'Pyspark' trong tùy chọn 'Select Kernel'.
 
-![Mở notebook](/images/workshop/emr-open-notebook.webp)
+![Mở notebook](/images/workshop/emr-open-notebook.png)
 
 Bạn đã sẵn sàng tạo Namespace và Table trong S3 Tables dựa trên EMR Serverless.
 
@@ -75,7 +75,7 @@ Giá trị `${bucket}` và `${table_bucket_arn}` cần được thay đổi phù
 
 3. Nhấp nút Run để thực thi Cell notebook.
 
-![Cấu hình Spark](/images/workshop/lab3-2-configure.webp)
+![Cấu hình Spark](/images/workshop/lab3-2-configure.png)
 
 Bạn đã sẵn sàng sử dụng mã Pyspark tham chiếu đến Amazon S3 Tables, Glue và Apache Iceberg.
 

@@ -30,7 +30,7 @@ Trong menu bên trái của JupyterLab, nhấp để mở notebook 'workshop-wor
 
 Chọn 'Pyspark' trong tùy chọn 'Select Kernel'.
 
-![Mở notebook](/images/workshop/emr-open-notebook.webp)
+![Mở notebook](/images/workshop/emr-open-notebook.png)
 
 Bạn đã sẵn sàng tạo Namespace và Table trong S3 Tables dựa trên EMR Serverless.
 
@@ -46,7 +46,7 @@ Chọn Table buckets từ menu bên trái.
 
 Sao chép giá trị ARN (Amazon Resource Name) của Table bucket đã tạo.
 
-![ARN của Table bucket](/images/workshop/table-bucket-arn.webp)
+![ARN của Table bucket](/images/workshop/table-bucket-arn.png)
 
 Nhấp nút '+' để tạo Cell mới và thêm mã Configuration sau:
 
@@ -101,19 +101,9 @@ Mã này cấu hình Spark để sử dụng các thành phần sau:
 - Nhập 'ap-northeast-2' hoặc 'us-east-1' cho giá trị region.
 
 {{% notice info %}}
-Có hai cách để thiết lập catalog trong mã Configuration.
+Có hai cách để thiết lập catalog trong mã Configuration. (Tùy chọn-1) là phương pháp thiết lập S3TablesCatalog, và (Tùy chọn-2) thiết lập catalog kiểu REST. Cả hai phương pháp đều hoạt động, nhưng để thuận tiện, chúng ta sẽ tiến hành với (Tùy chọn-1) trong lab này.
 
-(Tùy chọn-1) là phương pháp thiết lập S3TablesCatalog,
-
-(Tùy chọn-2) thiết lập catalog kiểu REST.
-
-Cả hai phương pháp đều hoạt động, nhưng để thuận tiện, chúng ta sẽ tiến hành với (Tùy chọn-1) trong lab này.
-
-(Lưu ý) Phương pháp Tùy chọn-2 chưa hỗ trợ tạo bảng từ Dataframes.
-
-Sử dụng `df.write.saveAsTable(...)` sẽ dẫn đến lỗi `Stage-create is currently not supported.`
-
-Với phương pháp này, bạn cần tạo bảng bằng `spark.sql("CREATE TABLE ...")` rồi chèn dữ liệu bằng `df.write.InsertInto(...)`.
+(Lưu ý) Phương pháp Tùy chọn-2 chưa hỗ trợ tạo bảng từ Dataframes. Sử dụng `df.write.saveAsTable(...)` sẽ dẫn đến lỗi `Stage-create is currently not supported.` Với phương pháp này, bạn cần tạo bảng bằng `spark.sql("CREATE TABLE ...")` rồi chèn dữ liệu bằng `df.write.InsertInto(...)`.
 {{% /notice %}}
 
 Nhấp nút Run để thực thi Cell notebook.
@@ -123,17 +113,7 @@ Bạn đã sẵn sàng sử dụng mã Pyspark tham chiếu đến Amazon S3 Tab
 ## Đọc Dữ liệu CSV từ S3
 
 {{% notice info %}}
-Phần này hướng dẫn đọc dữ liệu CSV từ S3 bằng Spark.
-
-Nếu bạn gặp lỗi liên quan đến bộ nhớ hoặc được yêu cầu khởi động lại kernel sau khi thực thi mã configuration và chạy mã Spark, khuyến nghị khởi động lại EMR Serverless Application như sau:
-
-Chọn 'Serverless' > 'Applications' từ menu bên trái trên màn hình EMR Studio.
-
-Chọn 'workshop_emr_application' và nhấp nút 'Stop application' để dừng.
-
-Sau đó nhấp nút 'Start application' để khởi động EMR Serverless Application.
-
-Xác nhận rằng cluster đã được gắn đúng trong notebook JupyterLab trước khi tiếp tục công việc.
+Phần này hướng dẫn đọc dữ liệu CSV từ S3 bằng Spark. Nếu bạn gặp lỗi liên quan đến bộ nhớ hoặc được yêu cầu khởi động lại kernel sau khi thực thi mã configuration và chạy mã Spark, khuyến nghị khởi động lại EMR Serverless Application như sau: Chọn 'Serverless' > 'Applications' từ menu bên trái trên màn hình EMR Studio. Chọn 'workshop_emr_application' và nhấp nút 'Stop application' để dừng. Sau đó nhấp nút 'Start application' để khởi động EMR Serverless Application. Xác nhận rằng cluster đã được gắn đúng trong notebook JupyterLab trước khi tiếp tục công việc.
 {{% /notice %}}
 
 Truy cập EMR Workspace (JupyterLab) đã tạo trước đó.
@@ -173,7 +153,7 @@ df = spark.read \
 - Thay thế `<bucket>` bằng tên S3 bucket phù hợp với môi trường của bạn.
 - Định nghĩa schema rồi đọc dữ liệu CSV từ S3.
 
-![Đọc file CSV](/images/workshop/emr-read-csv-data.webp)
+![Đọc file CSV](/images/workshop/emr-read-csv-data.png)
 
 Nhấp nút '+' để thêm Cell.
 
@@ -360,7 +340,7 @@ WHERE legal_dong_code = '1111010100'
 
 Mã này cập nhật `legal_dong_name` thành 'Seoul Jongno-gu Cheongunbong-dong' cho các dòng có `legal_dong_code` là '1111010100'.
 
-![Cập nhật bảng](/images/workshop/emr-update-table.webp)
+![Cập nhật bảng](/images/workshop/emr-update-table.png)
 
 Nhấp nút '+' để thêm Cell.
 

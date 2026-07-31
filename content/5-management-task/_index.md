@@ -53,7 +53,7 @@ aws s3tables get-table-maintenance-job-status \
     --name $table
 ```
 
-![Job status](/images/workshop/get-job-status.webp)
+![Job status](/images/workshop/get-job-status.png)
 
 | Job | Description |
 |-----|-------------|
@@ -72,7 +72,7 @@ aws s3tables get-table-maintenance-configuration \
     --name $table
 ```
 
-![Job config](/images/workshop/get-job-configuration.webp)
+![Job config](/images/workshop/get-job-configuration.png)
 
 | Configuration | Description |
 |---------------|-------------|
@@ -147,6 +147,6 @@ aws s3tables get-table-maintenance-configuration \
     --name $table
 ```
 
-![Updated job config](/images/workshop/get-updated-job-configuration.webp)
+![Updated job config](/images/workshop/get-updated-job-configuration.png)
 
 You can confirm the updated configuration values.

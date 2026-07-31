@@ -9,11 +9,7 @@ pre: " <b>4.1. </b>"
 {{% notice info "Thông tin" %}}
 https://registry.opendata.aws/synthea-coherent-data/
 
-Trong trường hợp dữ liệu lâm sàng bệnh nhân, rất khó sử dụng cho mục đích thực hành workshop do các vấn đề về quyền riêng tư.
-
-Ví dụ, dữ liệu như MIMIC-III chỉ có thể được sử dụng cho các mục đích hạn chế sau khi được phê duyệt sử dụng.
-
-Do đó, chúng ta sẽ sử dụng dữ liệu lâm sàng bệnh nhân được tạo nhân tạo được cung cấp tại URL trên.
+Trong trường hợp dữ liệu lâm sàng bệnh nhân, rất khó sử dụng cho mục đích thực hành workshop do các vấn đề về quyền riêng tư. Ví dụ, dữ liệu như MIMIC-III chỉ có thể được sử dụng cho các mục đích hạn chế sau khi được phê duyệt sử dụng. Do đó, chúng ta sẽ sử dụng dữ liệu lâm sàng bệnh nhân được tạo nhân tạo được cung cấp tại URL trên.
 {{% /notice %}}
 
 Dữ liệu này được nén trong tệp ZIP và là một **bộ dữ liệu tổng hợp** bao gồm dữ liệu tệp CSV, dữ liệu định dạng FHIR, dữ liệu hình ảnh DICOM và dữ liệu Genome.
@@ -49,11 +45,5 @@ Chúng ta sẽ tiến hành Lab-2 sử dụng **dữ liệu tổng hợp** này.
 {{% notice info "Thông tin" %}}
 **AWS Open Data Program là gì?**
 
-AWS Open Data Program (ODP) giúp dân chủ hóa quyền truy cập vào các bộ dữ liệu công khai có giá trị cao bằng cách lưu trữ chúng trong Amazon S3 và giúp dễ dàng khám phá thông qua Registry of Open Data on AWS (RODA).
-
-Các bộ dữ liệu này có thể được sử dụng bởi bất kỳ ai để xây dựng dịch vụ hoặc thực hiện phân tích bằng các công cụ AWS như Amazon EC2, Amazon Athena, AWS Lambda và Amazon EMR.
-
-Bằng cách lưu trữ các bộ dữ liệu trên AWS, người dùng có thể giảm chi phí và độ phức tạp của việc thu thập dữ liệu và tập trung vào việc rút ra thông tin chi tiết.
-
-Dữ liệu trong ODP được lưu trữ trong các S3 bucket công khai, nghĩa là không có hạn chế truy cập. Bất kỳ ai cũng có thể tải xuống và sử dụng dữ liệu trực tiếp từ các vị trí S3 này.
+AWS Open Data Program (ODP) giúp dân chủ hóa quyền truy cập vào các bộ dữ liệu công khai có giá trị cao bằng cách lưu trữ chúng trong Amazon S3 và giúp dễ dàng khám phá thông qua Registry of Open Data on AWS (RODA). Các bộ dữ liệu này có thể được sử dụng bởi bất kỳ ai để xây dựng dịch vụ hoặc thực hiện phân tích bằng các công cụ AWS như Amazon EC2, Amazon Athena, AWS Lambda và Amazon EMR. Bằng cách lưu trữ các bộ dữ liệu trên AWS, người dùng có thể giảm chi phí và độ phức tạp của việc thu thập dữ liệu và tập trung vào việc rút ra thông tin chi tiết. Dữ liệu trong ODP được lưu trữ trong các S3 bucket công khai, nghĩa là không có hạn chế truy cập. Bất kỳ ai cũng có thể tải xuống và sử dụng dữ liệu trực tiếp từ các vị trí S3 này.
 {{% /notice %}}

@@ -7,9 +7,7 @@ pre: " <b>1.1. </b>"
 ---
 
 {{% notice info %}}
-Amazon S3 Tables is a new service officially launched by AWS in late 2023. It is a table-format data service based on Amazon S3 object storage.
-
-It simplifies data lake construction and management. Built on the Apache Iceberg open-source table format, it allows data analysts and engineers to easily manage data stored in S3.
+Amazon S3 Tables is a new service officially launched by AWS in late 2023. It is a table-format data service based on Amazon S3 object storage. It simplifies data lake construction and management. Built on the Apache Iceberg open-source table format, it allows data analysts and engineers to easily manage data stored in S3.
 {{% /notice %}}
 
 Before we dive into Amazon S3 Tables, let's first take a look at Apache Iceberg.

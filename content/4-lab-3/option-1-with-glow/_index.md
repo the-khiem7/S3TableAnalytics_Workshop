@@ -30,7 +30,7 @@ This section covers accessing the EMR Workspace set up in Prerequisites > Setup 
 
 9. Select 'Pyspark' in the 'Select Kernel' option.
 
-![Open notebook](/images/workshop/emr-open-notebook.webp)
+![Open notebook](/images/workshop/emr-open-notebook.png)
 
 You are now ready to create Namespace and Table in S3 Tables based on EMR Serverless.
 
@@ -86,7 +86,7 @@ The `${bucket}` and `${table_bucket_arn}` values should be changed to match your
 
 3. Click the Run button to execute the notebook cell.
 
-![Spark configuration](/images/workshop/lab3-configure.webp)
+![Spark configuration](/images/workshop/lab3-configure.png)
 
 Preparations are now complete to use Pyspark code referencing Amazon S3 Tables, Glue, Apache Iceberg, as well as the Glow library.
 
